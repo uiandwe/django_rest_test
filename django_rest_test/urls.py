@@ -23,8 +23,10 @@ urlpatterns = [
     url(r'^rest-swagger/', schema_view),
     url(r'^blog/', blog_page),
 
-
+    url(r'^post/', include('post.urls')),
 
     # Rest
     url(r'^api/blog/', blog_api.as_view()),
+
+
 ]
